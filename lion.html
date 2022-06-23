@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 3000px;
+        margin: 0;
+        background-image: url("https://mblogthumb-phinf.pstatic.net/20160127_177/krazymouse_1453865104404DjQIi_PNG/%C4%AB%C4%AB%BF%C0%C7%C1%B7%BB%C1%EE_%B6%F3%C0%CC%BE%F0.png?type=w2");
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+        background-attachment: fixed;
+      }
+      @font-face {
+        font-family: "Hesom";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Hesom.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      div {
+        font-family: "Hesom";
+      }
+
+      .gradient {
+        position: relative;
+        left: 20px;
+        height: 3000px;
+        width: 100px;
+        background: linear-gradient(orange, black);
+      }
+
+      .container {
+        display: inline-flex;
+        background-color: #c8b5a8;
+        opacity: 0.9;
+        height: 70px;
+        width: 100%;
+        line-height: 50px;
+        position: fixed;
+        top: 0px;
+        text-align: center;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+        /* display: flex;
+        flex-wrap: wrap; */
+      }
+
+      .container2 {
+        display: inline-flex;
+        background-color: #60402e;
+        opacity: 0.9;
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        text-align: center;
+        /* align-content: center; */
+        align-items: center;
+        line-height: 50px;
+      }
+
+      .item {
+        flex-wrap: wrap;
+        height: 50px;
+        border-radius: 30px;
+        font-weight: 700;
+        background-color: #f5f2f0;
+        color: #c8b5a8;
+        font-size: 20px;
+        border: 5px dotted #cdaf99;
+        flex-basis: 150px;
+      }
+
+      .item:hover {
+        background-color: #8b572d;
+        color: #f5f2f0;
+        cursor: pointer;
+      }
+
+      .bottom-item {
+        height: 50px;
+        border-radius: 30px;
+        font-weight: 700;
+        color: #60402e;
+        font-size: 1.5em;
+        background-color: #c8b5a8;
+        border: 4px double #60402e;
+      }
+
+      .bottom-item:hover {
+        background-color: #f5f2f0;
+        color: #120904;
+        cursor: pointer;
+      }
+
+      .item1 {
+        flex-grow: 1;
+      }
+
+      .item2 {
+        flex-grow: 1;
+      }
+
+      .item3 {
+        flex-grow: 1;
+      }
+
+      .item4 {
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gradient"></div>
+    <div class="container">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+    </div>
+    <div class="container2">
+      <div class="bottom-item item1">고정 비율1</div>
+      <div class="bottom-item item2">고정 비율2</div>
+      <div class="bottom-item item3">고정 비율3</div>
+      <div class="bottom-item item4">고정 비율4</div>
+    </div>
+  </body>
+</html>
